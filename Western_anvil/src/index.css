@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+}
+:root{
+  --background-color:#678293;
+}
+
+[data_theme="dark"]{
+  --background-color:#f8f8f8;
+}
