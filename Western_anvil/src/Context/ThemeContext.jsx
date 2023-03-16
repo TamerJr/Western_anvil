@@ -18,7 +18,7 @@ export const ThemeContextProvider = ({children}) => {
       :
       setLightMode()
     }
-    {selectedTheme =="dark" && setDarkMode()}
+    {selectedTheme =="light" && setLightMode()}
 
   return (
     <ThemeContext.Provider value={{toggleTheme,selectedTheme}}>

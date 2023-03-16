@@ -1,19 +1,20 @@
-import { useState , useContext} from 'react'
 import { Route, Routes } from 'react-router'
+import {AboutUs, Account, Home, LogIn, Navbar, Shop, ShopCart, SignUp, Terms, VedioDetails} from "./Utilies/utilies"
 import './App.css'
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <Routes>
-        <Route path='/' element={}/>
-        <Route path='/shopcart' element={}/>
-        <Route path='/account' element={}/>
-        <Route path='/shop' element={}/>
-        <Route path='/login' element={}/>
-        <Route path='/signup' element={}/>
-        <Route path='/element/:id' element={}/>
-        <Route path='/terms' element={}/>
-        <Route path='/aboutus' element={}/>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/shopcart' element={<ShopCart/>}/>
+        <Route path='/account' element={<Account/>}/>
+        <Route path='/shop' element={<Shop/>}/>
+        <Route path='/login' element={<LogIn/>}/>
+        <Route path='/signup' element={<SignUp/>}/>
+        <Route path='/VedioDetails/:id' element={<VedioDetails/>}/>
+        <Route path='/terms' element={<Terms/>}/>
+        <Route path='/aboutus' element={<AboutUs/>}/>
       </Routes>
     </div>
   )

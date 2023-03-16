@@ -7,16 +7,15 @@ import {getFirestore} from "firebase/firestore"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: `${import.meta.env.VITE_APP_API_KEY }`,
+  apiKey: (import.meta.env.VITE_APP_API_KEY),
   authDomain: "western-anvil.firebaseapp.com",
   projectId: "western-anvil",
   storageBucket: "western-anvil.appspot.com",
-  messagingSenderId: `${import.meta.env.VITE_APP_API_ID}` ,
-  appId: `${import.meta.env.VITE_APP_MESSAGE_SENDER_ID}` ,
+  messagingSenderId: (import.meta.env.VITE_APP_MESSAGE_SENDER_ID),
+  appId: (import.meta.env.VITE_APP_API_ID )
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
- const auth = getAuth(app);
+export  const auth = getAuth(app);
  export const db  = getFirestore(app);
- export default auth

@@ -2,40 +2,52 @@ import React, { useState ,useEffect } from 'react'
 import { createContext } from 'react'
 import { createUserWithEmailAndPassword ,onAuthStateChanged,signInWithEmailAndPassword , signOut } from 'firebase/auth'
 import { db } from '../../firebaseConfig'
-import  auth from "../../firebaseConfig"
+import  {auth} from "../../firebaseConfig"
 import {  doc, setDoc } from 'firebase/firestore'
 const userContext=createContext()
 export const UserContextProvider = ({children}) => {
     const [email,setEmail]=useState("")
     const [password,setPassword]=useState()
-    const [user,setUser]=useState({})
-    const dbCollection=doc(db,"userSubs",`${user?.email}`)
+    const [user,setUser]=useState()
 
     //sign up function
     const signUp=async(e)=>{
         e.preventDefault()
-        await createUserWithEmailAndPassword(auth,email,password)
-        await setDoc(dbCollection,{
-            showsList:[]
-        })
+        try{
+
+            await createUserWithEmailAndPassword(auth,email,password)
+            
+            await setDoc(doc(db,"userSubs",email),{
+                showsList:[]
+            })
+
+        }catch(err){
+            console.log(err.message)
+        }
     }
 
     //log in function
 
     const signIn=async(e)=>{
         e.preventDefault()
-        await signInWithEmailAndPassword(auth,email,password)
+        try{
+
+            signInWithEmailAndPassword(auth,email,password)
+        }catch(err){
+            console.log(err.message)
+        }
 
         
     }
 
     //user Login status
-    useEffect(()=>{
-        const userChng=onAuthStateChanged(auth,currentUser=>{
-            setUser(currentUser)
-        })
-        return ()=> userChng()
-    })
+    // useEffect(()=>{
+    //     const userChng=onAuthStateChanged(auth,currentUser=>{
+    //         setUser(currentUser)
+    //         console.log("logged in")
+    //     })
+    //     return ()=> userChng()
+    // })
 
 
     //log Out

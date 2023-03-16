@@ -1,11 +1,25 @@
-
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 :root{
-  --background-color:#ffffff;
+  --background-color:#000000;
+  --main-font:'Ubuntu', sans-serif;
+  --font-color :#C69749;
+  --hovered-color :#735F32;
+  --font-size: 1.12rem;
+  --header-size :1.8rem;
+  --side-header-size:1.5rem;
 }
 [data-theme="dark"]{
-  --background-color:#160303;
+  --background-color:#F5EDCE;
+  --font-color :#1A0000;
+  --hovered-color :#58287F;
 }
 
 body{
   background-color: var(--background-color);
+  margin: 1rem 0.5rem;
+  max-width: 100%;
+  font-family: var(--main-font);
+}
+*{
+  font-size: var(--font-size);
 }

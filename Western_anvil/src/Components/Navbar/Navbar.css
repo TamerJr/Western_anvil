@@ -1,0 +1,47 @@
+nav{
+    max-width: 100%;
+    position: sticky;
+    top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+    align-content: center;
+    text-decoration: none;
+    transition: 300ms ease-in-out;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.363);
+}
+*{
+    color: var(--font-color);
+    text-decoration: none; 
+}
+nav img{
+    width: 250px;
+}
+.NavigationBar ul {
+    list-style: none;
+    text-decoration: none;
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+.NavigationBar ul li{
+    margin: 0 1rem;
+    text-align: center;
+}
+.AuthUser button{
+    margin: 0 1rem;
+    font-size: 1rem;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.777);
+    padding: .5rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.AuthUser button:hover{
+    background-color: #fff;
+    color: black;
+}
+.NavigationBar ul li *:hover{
+    color: var( --hovered-color);
+}

@@ -14,7 +14,7 @@ export const DBContextProvider = ({children}) => {
     useEffect(()=>{
    
         onSnapshot(dbCollection,(doc)=>{
-            setList(doc?.data().showsList)
+            setList(doc?.data()?.showsList)
         })
     },[user?.email])
 
@@ -25,7 +25,7 @@ export const DBContextProvider = ({children}) => {
         setList([...newEles])
         try{
             updateDoc(dbCollection,{
-                showsList:list
+                showsList:[...list]
             })
         }catch(err){
             console.log(err.message)
