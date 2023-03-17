@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../../Assets/Logo.png";
 import userContext from "../../Context/AuthContext";
+import ThemeToggler from "../ThemeToggler/ThemeToggler";
 import "./Navbar.css";
 const Navbar = () => {
   const navigator = useNavigate();
@@ -35,6 +36,7 @@ const Navbar = () => {
       <section className="AuthUser">
         {!user ? (
           <>
+          <ThemeToggler/>
             <button onClick={() => handleNav("login")}>Log In</button>
             <button onClick={() => handleNav("signup")}>Sign Up</button>
           </>

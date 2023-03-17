@@ -8,8 +8,8 @@
   --header-size :1.8rem;
   --side-header-size:1.5rem;
 }
-[data-theme="dark"]{
-  --background-color:#F5EDCE;
+[data-theme="light"]{
+  --background-color:#cccbc8;
   --font-color :#1A0000;
   --hovered-color :#58287F;
 }

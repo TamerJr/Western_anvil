@@ -28,6 +28,11 @@ nav img {
   margin: 0 1rem;
   text-align: center;
 }
+.AuthUser{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .AuthUser button {
   margin: 0 1rem;
   font-size: 1rem;

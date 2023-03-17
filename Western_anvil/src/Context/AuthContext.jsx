@@ -10,7 +10,6 @@ import { db } from "../../firebaseConfig";
 import { auth } from "../../firebaseConfig";
 import { doc, setDoc } from "firebase/firestore";
 import { useNavigate } from "react-router";
-import { async } from "q";
 const userContext = createContext();
 export const UserContextProvider = ({ children }) => {
   const navigate = useNavigate();
