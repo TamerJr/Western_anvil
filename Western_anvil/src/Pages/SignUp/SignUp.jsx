@@ -3,8 +3,7 @@ import Form from "../../Components/Form/Form";
 import userContext from "../../Context/AuthContext";
 
 const SignUp = () => {
-  const {user, signUp ,setEmail,setPassword} = useContext(userContext);
-  console.log(user)
+  const { signUp ,setEmail,setPassword} = useContext(userContext);
   return (
     <form onSubmit={signUp}>
       <p>

@@ -5,6 +5,7 @@ import userContext from "../../Context/AuthContext";
 import "./Navbar.css";
 const Navbar = () => {
   const navigator = useNavigate();
+
   const handleNav = (ele) => {
     navigator(`/${ele}`);
   };
