@@ -8,7 +8,8 @@ nav {
   align-content: center;
   text-decoration: none;
   transition: 300ms ease-in-out;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.363);
+  border-bottom: var(--border-bottom)
+  
 }
 * {
   color: var(--font-color);
@@ -37,7 +38,7 @@ nav img {
   margin: 0 1rem;
   font-size: 1rem;
   background: none;
-  border: 1px solid rgba(255, 255, 255, 0.777);
+  border: var(--button-border);
   padding: 0.5rem 1rem;
   border-radius: 25px;
   cursor: pointer;

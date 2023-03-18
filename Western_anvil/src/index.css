@@ -7,16 +7,21 @@
   --font-size: 1.12rem;
   --header-size :1.8rem;
   --side-header-size:1.5rem;
+  --border-bottom: 1px solid rgba(255, 255, 255, 0.386);
+  --button-border: 1px solid rgba(255, 255, 255, 0.774);
 }
 [data-theme="light"]{
   --background-color:#cccbc8;
   --font-color :#1A0000;
   --hovered-color :#58287F;
+  --border-bottom: 1px solid rgba(0, 0, 0, 0.386);
+  --button-border: 1px solid rgba(0, 0, 0, 0.774);
+
 }
 
 body{
   background-color: var(--background-color);
-  margin: 1rem 0.5rem;
+  margin:0 0.5rem;
   max-width: 100%;
   font-family: var(--main-font);
 }
