@@ -8,7 +8,6 @@ import"./ThemeToggler.css"
 function ThemeToggler() {
   const { toggleTheme, seletedTheme } = useContext(ThemeContext);
   const [ele, setEle] =useState(seletedTheme=="dark"? seletedTheme=="dark":false)
-  console.log(ele);
   const handleChange = (e) => {
     setEle(e.target.checked)
       toggleTheme(e)
