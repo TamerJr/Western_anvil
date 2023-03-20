@@ -1,0 +1,39 @@
+article.ChannelCard {
+  display: flex;
+  max-width: 100;
+  justify-items: center;
+  justify-content: flex-start;
+  border: var(--border-bottom);
+  border-radius: 50px ;
+  margin: 2rem;
+  height: fit-content;
+  box-shadow: var(--shadow-box);
+  background-color: var(--article);
+}
+article.ChannelCard h1 {
+  font-size: var(--header-size);
+}
+
+article.ChannelCard section.Discription span {
+  color: var( --span-color );
+  margin-left: 1rem;
+}
+article.ChannelCard h4 {
+  font-size: var(--side-header-size);
+}
+article.ChannelCard figure.ChannelCard-Img-container {
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+article.ChannelCard figure.ChannelCard-Img-container img {
+  border: 3px solid white;
+  border-radius: 50px;
+  width: 100%;
+  max-height: 100%;
+  box-shadow: var(--shadow-box);
+
+}
