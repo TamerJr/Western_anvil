@@ -1,0 +1,32 @@
+section.ChannelDetails_section {
+  width: 100%;
+  border: var(--border-bottom);
+  /* border-radius: 25px; */
+  margin-top: 2rem;
+  height: 100vh;
+  overflow: hidden;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+section.ChannelDetails_section div.ChannelDetails_Cover {
+  width: 300px;
+  position: sticky;
+  overflow: hidden;
+  padding: 1rem;
+  height: 100%;
+  background-color: #ffffff66;
+  text-align: center;
+}
+h1 {
+  font-size: 2rem;
+}
+
+.ChannelDetails_section .ChannelDetails_Cover img {
+  width: 100%;
+  height: 300px;
+  border-radius: 50%;
+}

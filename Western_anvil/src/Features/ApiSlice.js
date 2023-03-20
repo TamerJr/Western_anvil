@@ -19,17 +19,15 @@ export const podcastApi = createApi({
     getChannelDetails: builder.query({
       query: (ChannelId) => createRequest(`channel/v3?cid=${ChannelId}`),
     }),
-    getFeedChannel: builder.query({
+    getEpisodesList: builder.query({
       query: (ChannelId) =>
-        createRequest(`/episodes/overview?cids=${ChannelId}`),
-    }),
-    getEpisodeDetails: builder.query({
-      query: (EpisodeId) => createRequest(`/episode/v4?eid=${EpisodeId}`),
-    }),
+        createRequest(`/episode_list/v2?cid=${ChannelId}&limit=200`),
+    })
   }),
 });
 
 export const {
   useGetSearchPodcastChannelQuery,
   useGetChannelDetailsQuery,
+  useGetEpisodesListQuery,
 } = podcastApi;
