@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <DBContextProvider>
         <ThemeContextProvider>
           <ApiProvider api={podcastApi}>
-              <App />
+            <App />
           </ApiProvider>
         </ThemeContextProvider>
       </DBContextProvider>
