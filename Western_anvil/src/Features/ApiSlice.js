@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const apiHeaders = {
-  "X-RapidAPI-Key": "1b6b7a6078msh110cf9747436a82p1c2029jsnb3572d52b80f",
+  "X-RapidAPI-Key": "b586524f7dmshef96d038d1f59dap129727jsn7c0aae24cfbf",
   "X-RapidAPI-Host": "podcast-api1.p.rapidapi.com",
 };
 const baseUrl = "https://podcast-apil.p.rapidapi.com";
@@ -22,7 +22,10 @@ export const podcastApi = createApi({
     getEpisodesList: builder.query({
       query: (ChannelId) =>
         createRequest(`/episode_list/v2?cid=${ChannelId}&limit=200`),
-    })
+    }),
+    getEpisodeDetails: builder.query({
+      query: (EpisodeId) => createRequest(`/episode/v4?eid=${EpisodeId}`),
+    }),
   }),
 });
 
@@ -30,4 +33,5 @@ export const {
   useGetSearchPodcastChannelQuery,
   useGetChannelDetailsQuery,
   useGetEpisodesListQuery,
+  useGetEpisodeDetailsQuery
 } = podcastApi;

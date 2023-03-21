@@ -3,12 +3,12 @@ article.ChannelCard {
   max-width: 100;
   justify-items: center;
   justify-content: flex-start;
-  border: var(--border-bottom);
+  /* border-bottom: var(--border-bottom); */
   border-radius: 50px ;
   margin: 2rem;
   height: fit-content;
   box-shadow: var(--shadow-box);
-  background-color: var(--article);
+  background-color: #FFF1DC
 }
 article.ChannelCard h1 {
   font-size: var(--header-size);

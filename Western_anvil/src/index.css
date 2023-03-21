@@ -1,6 +1,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 :root{
-  --background-color:#2b2b2b;
+  --background-color:#000000;
   --main-font:'Ubuntu', sans-serif;
   --font-color :#C69749;
   --hovered-color :#735F32;
@@ -15,7 +15,7 @@
 }
 [data-theme="light"]{
   --span-color: #030b36;
-  --background-color:#898474;
+  --background-color:#FFF1DC;
   --font-color :#1A0000;
   --hovered-color :#58287F;
   --border-bottom: 1px solid rgba(0, 0, 0, 0.386);

@@ -17,7 +17,7 @@ const Home = () => {
   console.log(newData);
   return (
     <div>
-      <input type="search" onChange={(e) => setSearch(e.target.value)} />
+      <input type="search" onChange={(e) => setSearch(e.target.value)} placeholder="search"/>
         
       <Suspense fallback={<h1>Laoding</h1>}>
         {newData?.map(ele=>
