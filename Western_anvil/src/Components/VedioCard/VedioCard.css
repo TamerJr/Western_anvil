@@ -1,0 +1,49 @@
+.Episode_Detail_Article {
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    gap: .4rem;
+    align-items: center;
+    border: var(--button-border);
+    border-radius: 15px;
+  
+  }
+  h1.Title_value {
+    font-size: 1rem;
+    padding: 0 5px 0 0;
+  }
+  .Episode_Detail_Article h1{
+      margin: 0 0 .3rem 0;
+  }
+  .Episode_Detail_Article  p{
+      font-size: 16px;
+      margin: 0;
+  }
+  .Episode_details{
+      width: 450px;
+      height: 100%;
+      display: flex;
+      padding: 0 .3rem 0 1rem;
+      flex-flow: column;
+      justify-content: space-evenly;
+      text-align: center;
+      align-items: center;
+  }
+  figure.Episode_Detail_Article_Image {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+  
+  }
+  figure.Episode_Detail_Article_Image .Img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  
+    padding: 0;
+  }
+  
